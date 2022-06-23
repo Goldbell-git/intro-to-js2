@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let firstNumber = Number(prompt('Input any number'));
+        let SecondNumber = Number(prompt('Input any number'));
+        let Operator = prompt('Input an operator(*, -, +, or /)');
+
+        if (Operator == '*') {
+            result = firstNumber * SecondNumber;
+        }
+        else if (Operator == '+') {
+            result = firstNumber + SecondNumber;
+        }
+        else if (Operator == '-') {
+            result = firstNumber - SecondNumber;
+        }
+        else if (Operator == '/') {
+            result = firstNumber / SecondNumber;
+        }
+        else {
+            alert('Error!!! Input the correct details')
+        }
+        alert(result);
+        console.log(firstNumber);
+        console.log(Operator);
+        console.log(SecondNumber);
+        console.log(result);
+    </script>
+</body>
+</html>
